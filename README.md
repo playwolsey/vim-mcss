@@ -1,16 +1,14 @@
-# VIM-LESS
+# VIM-MCSS
 
-**This project is looking for new contributors / a new maintainer. [issue 51](https://github.com/groenewege/vim-less/issues/51)**
+**This project is just for netease mcss**
 
 ---
 
-This vim bundle adds syntax highlighting, indenting and autocompletion for the dynamic stylesheet language [LESS](http://lesscss.org).
+This vim bundle adds syntax highlighting, indenting and autocompletion for the dynamic stylesheet language [MCSS](http://operatino.github.io/MCSS/cn/).
 
 This bundle is compatible with [vim-css-color](https://github.com/skammer/vim-css-color),
 [vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax) and possibly other plugins that place code
 in `after/syntax/css.vim` or `after/syntax/css/*.vim`.
-
-![vim-less with vim-css-color and vim-css3-syntax (colorscheme solarized)](https://github.com/lenniboy/vim-less/raw/master/screenshot.png)
 
 
 ## Installing and Using
@@ -20,40 +18,37 @@ in `after/syntax/css.vim` or `after/syntax/css/*.vim`.
 
         call pathogen#infect()
 
-- Make a clone of the `vim-less` repository:
+- Make a clone of the `vim-mcss` repository:
 
         $ mkdir -p ~/.vim/bundle
         $ cd ~/.vim/bundle
-        $ git clone https://github.com/groenewege/vim-less
+        $ git clone https://github.com/playwolsey/vim-mcss
 
 - OR use [vundle](https://github.com/gmarik/vundle), adding this line to your `~/.vimrc`:
 
-        Plugin 'groenewege/vim-less'
+        Plugin 'playwolsey/vim-mcss'
         
 
 - OR use [neobundle](https://github.com/Shougo/neobundle.vim), adding this line to your `~/.vimrc`:
 
-        NeoBundle 'groenewege/vim-less'
+        NeoBundle 'playwolsey/vim-less'
         
 
 - OR use git submodules:
 
-        $ git submodule add https://github.com/groenewege/vim-less.git bundle/vim-less
+        $ git submodule add https://github.com/playwolsey/vim-mcss.git bundle/vim-mcss
         $ git submodule init
 
 
 ### Map
-.less to .css , lessc is required.
+.mcss to .css is required.
 
-    nnoremap <Leader>m :w <BAR> !lessc % > %:t:r.css<CR><space>
+    nnoremap <Leader>m :w <BAR> !mcss % > %:t:r.css<CR><space>
 
 
-## Credits
+## Licensed
+[MIT][license]
+:heart:
 
-Inspiration from [vim-haml](https://github.com/tpope/vim-haml),
-[scss-syntax.vim](https://github.com/cakebaker/scss-syntax.vim) and
-[vim-less](https://github.com/lunaru/vim-less)
 
-## License ##
-
-MIT : [groenewege.mit-license.org](http://groenewege.mit-license.org/)
+[license]: http://opensource.org/licenses/MIT
